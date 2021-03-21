@@ -1,0 +1,103 @@
+@import url("https://fonts.googleapis.com/css2?family=Newsreader:wght@500;700&display=swap");
+
+@import "reset.css";
+
+body {
+  box-sizing: border-box;
+  background-color: #15202f;
+  color: white;
+  font-family: "Newsreader", serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.greetingForm,
+.greeting {
+  display: none;
+}
+
+.showing {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.bgImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  animation: fadeIn 1s linear;
+}
+
+.clock h1 {
+  font-size: 130px;
+  font-weight: 700;
+}
+
+.clock span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+}
+
+input {
+  background: none;
+  border: none;
+  color: white;
+  text-align: center;
+  font-family: "Newsreader", serif;
+}
+
+input::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+.greetingForm input {
+  border-bottom: 1px solid white;
+  font-size: 50px;
+  width: 450px;
+}
+
+.greeting {
+  font-weight: 700;
+  font-size: 50px;
+}
+
+.toDoForm input {
+  font-size: 35px;
+  margin: 20px 0px 40px 0px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  width: 300px;
+}
+
+.toDoList {
+  font-size: 35px;
+}
+
+.toDoList li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.weather {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
